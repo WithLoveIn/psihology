@@ -24,7 +24,7 @@
 					<a href="tel:380663877059">+380663877059</a>
 					<p>г.Днепр</p>
 					<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Запись на консультацию</button>
-					
+
 				</div>
 			</div>
 		</div>
@@ -34,7 +34,48 @@
 			<div class="container">
 				<div class="row my-5">
 					<div class="col-12 col-md-6 order-1 order-md-0">
-						<p>ТЕКСТ</p>
+						<div class="papirus1 p-3 px-5" data-aos="fade-in" data-aos-delay="500">
+							<div class="console-container pt-4 px-3">
+								<span id="text1"></span>
+								<div class="console-underscore" id="console"><img src="img/pero.png" alt="pero" class="position-absolute" id="pero" data-toggle="rotation" data-tob="fade-out"></div>
+							</div>
+							<script>
+								consoleText(['\"Всем привет. Я Оля и я психолог.\"'],'text1');
+								function consoleText(words,id)
+								{
+									var visible=true;
+									var con = document.getElementById('console');
+									var letterCount=1;
+									var x=1;
+									var waiting = false;
+									var target = document.getElementById(id);
+									window.setInterval(function(){
+										if (letterCount===0 && waiting===false) {
+											waiting = true;
+											target.innerHTML = words[0].substing(0,letterCount);
+											window.setTimeout( function() {
+												var usedword = words.shift();
+												words.push(usedword);
+												x=1;
+												letterCount+=x;
+												waiting = false;
+											},1000);
+										}else if (letterCount === words[0].lenght+1 && waiting === false) {
+											waiting=true;
+											window.setTimeout(function(){
+												x=-1;
+												letterCount-=x;
+												waiting=false;
+											}, 1000)
+										}else if (waiting === false){
+											target.innerHTML = words[0].substring(0,letterCount)
+											letterCount+=x;
+										}
+									},120)	
+								}
+							</script>
+
+						</div>
 					</div>
 					<div class="col-12 col-md-6 order-0 order-md-1">
 						<img src="img/foto2.jpg" alt="foto" class="img-fluid">
