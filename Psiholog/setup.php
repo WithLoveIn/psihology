@@ -10,7 +10,7 @@ CURLOPT_MAXREDIRS => 10,
 CURLOPT_TIMEOUT =>30,
 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_2_0,
 CURLOPT_CUSTOMREQUEST =>"POST",
-CURLOPT_POSTFIELDS =>"{\r\n \"url\": \"https://withlooooo/viber/bot.php\",\r\n \"event_types\":[\r\n \"conversation_started\"\r\n ]\r\n}",
+CURLOPT_POSTFIELDS =>"{\r\n \"url\": \"https://Psiholog/viber/bot.php\",\r\n \"event_types\":[\r\n \"conversation_started\"\r\n ]\r\n}",
 CURLOPT_HTTPHEADER => array(
 "Cache-control: no-cache",
 "Content-Type: application/JSON",
