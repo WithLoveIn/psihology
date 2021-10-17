@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Психолог</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row my-5">
+				<div class="col-12 col-md-6" id="foto">
+					<img src="img/foto1.jpg" alt="foto" class="img-fluid">
+				</div>
+				<div class="col-12 col-md-6">
+					<h1>ПСИХОЛОГ</h1>
+					<h2>ГЕШТАЛЬТ-ТЕРАПЕВТ</h2>
+					<h2>Дворова Ольга</h2>
+					<a href="tel:380663877059">+380663877059</a>
+					<p>г.Днепр</p>
+					<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Запись на консультацию</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="section1">
+			<div class="container">
+				<div class="row my-5">
+					<div class="col-12 col-md-6 order-1 order-md-0">
+						<p>ТЕКСТ</p>
+					</div>
+					<div class="col-12 col-md-6 order-0 order-md-1">
+						<img src="img/foto2.jpg" alt="foto" class="img-fluid">
+					</div>	
+				</div>
+			</div>
+		</section>
+		<section class="section2">
+			<div class="container">
+				<div class="row my-5">
+					<div class="col-12 col-md-6">
+						<img src="img/foto3.jpg" alt="foto" class="img-fluid">
+					</div>
+					<div class="col-12 col-md-6">
+						<p>ТЕКСТ</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section3">
+			<div class="container">
+				<div class="row my-5">
+					<div class="col-12 col-md-6 order-1 order-md-0">
+						<p>ТЕКСТ</p>
+					</div>
+					<div class="col-12 col-md-6 order-0 order-md-1">
+						<img src="img/foto1.jfif" alt="foto" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section4">
+			<div class="container">
+				<div class="row d-flex justify-content-center text-center">
+					<h2>СЕРТИФИКАТЫ</h2>
+					<div class="col-12 row">
+						<div class="col-12 col-md-6 d-flex p-3">
+							<div class="col-12 d-flex">
+								<img src="img/sertificat1.jfif" alt="sert" class="img-fluid">		
+							</div>
+						</div>
+						<div class="col-12 col-md-6 d-flex p-3">
+							<div class="col-12 d-flex">
+								<img src="img/sertificat1.jfif" alt="sert" class="img-fluid">		
+							</div>
+						</div>
+						<div class="col-12 col-md-6 d-flex p-3">
+							<div class="col-12 d-flex">
+								<img src="img/sertificat1.jfif" alt="sert" class="img-fluid">		
+							</div>
+						</div>
+						<div class="col-12 col-md-6 d-flex p-3">
+							<div class="col-12 d-flex">
+								<img src="img/sertificat1.jfif" alt="sert" class="img-fluid">		
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body d-flex flex-column">
+					<label for="">Фамилия</label>
+					<input type="text">
+					<label for="">Имя</label>
+					<input type="text">
+					<label for="">Ваш запрос</label>
+					<textarea name="" id=""></textarea>
+					<div class="d-flex">
+						<div class="d-flex flex-column me-4">		
+							<label for="">Дата</label>
+							<input type="date">
+						</div>
+						<div class="d-flex flex-column">
+							<label for="">Время</label>
+							<input type="time">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Записаться</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
