@@ -6,7 +6,6 @@ body{
 img[alt="sert"]{
 	border: 3px solid #caf9d5;
 	border-radius: 10px;
-	box-shadow: 5px 5px 5px #caf9d5;
 }
 .btn-primary{
 	background-color: #caf9d5;
@@ -14,12 +13,24 @@ img[alt="sert"]{
 	font-size: 26px;
 	font-weight: 600;
 	color: #444;
+	box-shadow: 0px;
 }
-.btn-primary:hover{
+.btn-primary:hover,.btn-primary:visited,.btn-primary:focus,.btn-primary:active{
 	background-color: #f7dac4;
 	color: #444;
 	border-color: #caf9d5;
+	box-shadow: 0px;
 }
 a{
 	color: #444;
+	text-decoration: none;
+}
+a:hover{
+	color: #444;
+}
+textarea{
+	min-height: 200px;
+}
+.modal-header>button{
+	font-size: 12px;
 }
